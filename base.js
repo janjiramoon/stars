@@ -4,7 +4,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
     readMoreButton.addEventListener('click', function(event) {
         event.preventDefault(); // Prevent default link behavior
-        targetContent.style.display = 'block'; // Show the content
+        
+        // Toggle the visibility of the content
+        if (targetContent.style.display === 'block') {
+            targetContent.style.display = 'none'; // Hide the content
+        } else {
+            targetContent.style.display = 'block'; // Show the content
+        }
     });
 });
 
@@ -14,7 +20,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
     readMoreButton.addEventListener('click', function(event) {
         event.preventDefault(); // Prevent default link behavior
-        targetContent.style.display = 'block'; // Show the content
+        
+        // Toggle the visibility of the content
+        if (targetContent.style.display === 'block') {
+            targetContent.style.display = 'none'; // Hide the content
+        } else {
+            targetContent.style.display = 'block'; // Show the content
+        }
     });
 });
 
@@ -24,6 +36,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
     readMoreButton.addEventListener('click', function(event) {
         event.preventDefault(); // Prevent default link behavior
-        targetContent.style.display = 'block'; // Show the content
+        
+        // Toggle the visibility of the content
+        if (targetContent.style.display === 'block') {
+            targetContent.style.display = 'none'; // Hide the content
+        } else {
+            targetContent.style.display = 'block'; // Show the content
+        }
     });
 });
