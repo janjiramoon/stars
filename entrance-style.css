@@ -42,7 +42,7 @@ p {
 }
 
 .entrance-image {
-    width: 30%; /* Adjust this value to change the width */
+    width: 25%; /* Adjust this value to change the width */
     height: auto; /* Adjust this value to change the height */
     object-fit: cover; /* This ensures the image covers the area without distortion */
     border-radius: 30%; /* This creates a circular image; adjust for less rounded corners */
