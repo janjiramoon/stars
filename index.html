@@ -4,14 +4,232 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>janjira sun</title>
-    <link rel="stylesheet" href="entrance-style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" href="img/favicon.gif">
+    <meta property="og:image" content="https://pbs.twimg.com/media/GJKrvS0akAAoCQS?format=jpg&name=large">
+    <style>
+        body {
+            opacity: 0;
+            transition: opacity 1s;
+        }
+        body.fade-in {
+            opacity: 1;
+        }
+    </style>
 </head>
 <body>
-    <div class="entrance-container">
-        <img src="img/enter_1.png" class="entrance-image">
-        <h1>welcome (´｡• ᵕ •｡`)</h1>
-        <button id="enter-btn">enter</button>
+    <div class="container">
+        <!-- projects column -->
+        <div class="column projects-column">
+            <div class="projects-container">
+                <h1><i>Janjira Sun</i></h1>
+                <p>Copywriter, content strategist, and designer based in Seattle, WA. <a href="#" id="more-link" class="more-link">more</a></p>
+                <div id="more-content" class="more-content" style="display: none;">
+                    <p>contact: janjiratsun@gmail.com</p>
+                </div>
+                
+                <!-- projects -->
+                <div class="project-item" data-project="1">
+                    <div class="project-header">
+                        <div class="project-title">Joi and Blokes</div>
+                        <div class="project-subtext">content design, copywriting</div>
+                    </div>
+                    <div class="project-content" style="display: none;">
+                        <!-- template for project content special component -->
+                         <div class="project-info-start">
+                            <div class="project-sidebyside">
+                                <div class="project-intro">
+                                    <div class="pro-1">
+                                        <p>Reimagining content that’s more engaging, beautiful, and easy to understand within the wellness space.</p>
+                                        <p>Joi and Blokes is a personalized wellness company that focuses on providing hormone and longevity care. With over 130,000 followers on Instagram, their content was informative, but it lacked engagement and it still felt like Joi (for women) and Blokes (for men) were two different identities instead of one— which didn’t reflect their rebrand.</p>
+                                    </div>
+                                </div>
+                                <img src="img/jb_1c.png">
+                            </div>
+                         </div>
+                         <h3>Approach</h3>
+                            <p>I leveraged my copywriting and content strategy experience and worked with Micah and the existing content team to craft social posts that were clear and true to the brand’s voice- ensuring that each line of copy fit into J+B’s larger narrative: to be the support and guide for those struggling within their bodies.</p>
+                            <p>I noticed that their social posts were written in a way that were hard to understand, with cheeky phrases and imagery that felt edgy and playful, but not resonant with J+B’s mission. When shedding light on sensitive topics such as health, I wanted to make sure their audience felt seen and heard, while also comforted, well-informed, and directed to where they needed to go.</p>
+                            <img src="img/jb_2.png">
+                        <h3>Solution</h3>
+                         <p>While tons of content was fleshed out on Airtable, I used my copywriting knowledge to pair down the most important details, and challenged their original designs by layering different textures (glass, gradients, and text) and 3D elements. I created new ways to visualize data, and sourced imagery that reflected the ideal lifestyle of their audience- active, outdoorsy, and elevated.</p>
+                         <img src="img/jb_3.png">
+                         <p>The content was informative, thought-provoking, and more engaging than ever. This was the first time the audience was able to get a better grasp of who was running J+B, and how hormone therapy impacted them AND their audience.</p>
+                         <img src="img/jb_4.png">
+                    </div>
+                </div>
+                
+                <div class="project-item" data-project="2">
+                    <div class="project-header">
+                        <div class="project-title">Subframe</div>
+                        <div class="project-subtext">content strategy</div>
+                    </div>
+                    <div class="project-content" style="display: none;">
+                        <div class="project-info-start">
+                            <div class="project-sidebyside">
+                                <div class="project-intro">
+                                    <div class="pro-1">
+                                        <p>Exploring brand and content strategy to build up brand awareness and social presence.</p>
+                                        <p>Subframe is an AI-powered product design tool. In a world where AI is booming, Subframe struggled with <b>connecting their brand identity to content strategy and design.</b></p>
+                                    </div>
+                                </div>
+                                <img src="img/sf_1.png">
+                            </div>
+                         </div>
+                         <h3>Approach</h3>
+                            <p>Subframe as a brand was an extension of Filip— heavily inspired by the humanism of Bauhaus, the playfulness of Teenage Engineering, and the infinite and spiritual, yet restrained vibe of James Turrell and the color yves klein blue. Building within restraint was Subframe’s entire mission and vision— to create products without the barrier of code.</p>
+                            <p>After our first discovery call, I conducted market research to see how other products like Subframe marketed themselves, and I created a handful of content ideas based on Filip’s hopes for Subframe as a brand to see what stuck, and what didn’t. I ultimately came up with three different pillars— focusing on educational, product-focused content, their stance on AI to build credibility within the AI space, and blue sky content to build out the world of Subframe.</p>
+                            <img src="img/sf_2.png">
+                            <p>While I worked on building out content ideas based on these pillars, my partner, Micah, began building out Subframe on the design front. How would they appear online? In various channels? What could Subframe look like in the future?</p>
+                            <img src="img/sf_3.png">
+                            <img src="img/sf_4.png">
+                        <h3>Solution</h3>
+                            <p>The final deliverables were a comprehensive content strategy document, a one-week content calendar to visualize how much and what types of content to post based on Subframe’s content pillars, and voice and tone guidelines to guide content creation.</p>
+                            <p>The idea was to build out Subframe’s stance on AI, that AI is a tool that eliminates the barrier to entry for designers creating their own products.</p>
+                            <img src="img/sf_5.png">
+                            <img src="img/sf_6.png">
+                    </div>
+                </div>
+                
+                <div class="project-item" data-project="3">
+                    <div class="project-header">
+                        <div class="project-title">Nolaskinsentials</div>
+                        <div class="project-subtext">content strategy, project management</div>
+                    </div>
+                    <div class="project-content" style="display: none;">
+                        <div class="project-info-start">
+                            <div class="project-sidebyside">
+                                <div class="project-intro">
+                                    <div class="pro-1">
+                                        <p>Content strategy refresh and website redesign to market skincare essentials.</p>
+                                        <p>Nolaskinsentials is an Atlanta-based skincare brand naturally formulated to target a range of skin types and concerns, specifically for BIPOC. Their main social channel (Instagram) <b>lacked a cohesive digital identity and social strategy</b>, and with a wide range of products available for their audience, <b>their website felt bloated and hard to navigate.</b></p>
+                                    </div>
+                                </div>
+                                <img src="img/nola_1.png">
+                            </div>
+                         </div>
+                         <h3>Content strategy refresh</h3>
+                            <p>Nola lacked a cohesive voice, tone, and social presence. The content they created for various channels (Instagram, SMS, email marketing) didn’t feel reflective of their mission and who their target audience was, and each channel sounded different.</p>
+                            <p>After conducting a content audit, I created voice and tone guidelines, and built out Nola's content pillars to ensure that every piece of content that was created, regardless of channel, would be created with intention, drawing back to Nola’s mission and values— inspiring others to holistically transform their skin, without the glitz and glamour of the skindustry.</p>
+                            <img src="img/nola_2.png">
+                        <h3>Website navigation redesign</h3>
+                            <p>Nola’s mission was to target a variety of different skincare concerns, and because of this, their website was bloated and hard to navigate. I worked together with their web designer and a front-end engineer to create a more streamlined experience for new and returning customers— reimagining their informational architecture and various product pages to promote new and cult favorite products.</p>
+                            <img src="img/nola_3.png">
+                            <p>Instead of assuming that customers knew exactly where to go and what to purchase, I revamped Nola’s informational architecture highlight some of their best sellers, and to better cater to those who have specific skincare concerns. Creating an additional level of hierarchy helped navigate new customers to their best sellers, while returning customers could easily find the products they were looking for.</p>
+                            <img src="img/nola_4.png">
+                    </div>
+                </div>
+                
+                <div class="project-item" data-project="4">
+                    <div class="project-header">
+                        <div class="project-title">Murmur</div>
+                        <div class="project-subtext">content strategy, marketing</div>
+                    </div>
+                    <div class="project-content" style="display: none;">
+                        <div class="project-info-start">
+                            <div class="project-sidebyside">
+                                <div class="project-intro">
+                                    <div class="pro-1">
+                                        <p>Content strategy and marketing to raise awareness for the new way to work.</p>
+                                        <p>Murmur was a collaborative decision-making tool that ditches traditional documentation methods and enables teams to propose better agreements. They needed help on all things content: creating, distributing, and connecting the dots between different social channels.</p>
+                                    </div>
+                                </div>
+                                <img src="img/murmur_1a.png">
+                            </div>
+                         </div>
+                         <h3>Approach</h3>
+                            <p>Murmur was at the crossroads between the traditional way of working and the future of work, stuck in old processes but craving something new, something different.</p>
+                            <p>At the time, the CEO created content about the OS canvas— a tool for organization sense-making and reinvention. And while they had a handful of content, it didn’t quite fully connect Aaron’s vision of work and Murmur as a product.</p>
+                            <p>I took all of their content and categorized it to give them the structure they were lacking at the time. With four different content buckets, I wanted to give them a healthy mix of product education, future of work, and a space to talk about their interests— because those very interests are the pinnacle of the new way of work.</p>
+                            <img src="img/murmur_1b.png">
+                        <h3>Solution</h3>
+                            <p>During my time at Murmur, I created blog posts about the new way to work to help boost Murmur’s SEO, and created content for the various social media accounts I managed. Most of the content was geared towards manager and IC types— focusing on how to remove the weight behind certain decisions, how to create collaborative agreements, and how the product itself can facilitate the new way of work.</p>
+                            <img src="img/murmur_2.png">
+                    </div>
+                </div>
+                
+                <div class="project-item" data-project="5">
+                    <div class="project-header">
+                        <div class="project-title">Contra (wip)</div>
+                        <div class="project-subtext">copywriting</div>
+                    </div>
+                    <div class="project-content" style="display: none;">
+                        <!-- Content goes here when expanded -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- about me column -->
+        <div class="column about-column">
+            <div class="about-content">
+                <img src="img/about_4.jpg">
+                <h3>navigating, coexisting, just being.</h3>
+                <p>After joining the tech workforce in 2020, I’ve come to realize that we are so much more than our careers, so much more than the roles we play. The nature of my role(s) require me to be behind the scenes, the cogs that work overtime in the background that never get seen, but deliver results with little-to-no validation. However, I don’t have the desire to fit in a mold, to be a cog in the machine, and I think that’s what makes me, me :)</p>
+                <p>If I’m not whipping up copy, strategizing content, or designing content, I’m in my apartment tinkering with crochet, mixing DJ sets, or capturing mundane moments- because they deserve to be seen, loved, and cherished. Acknowledging each other’s existence is my favorite thing to do.</p>
+
+                <h3>experiences</h3>
+                <p><b>2025</b></p>
+                    <p>subframe (content strategy)</p>
+                    <p>joi and blokes (content design, copywriting)</p>
+                    <p>cardless (copywriting)</p>
+                <p><b>2024</b></p> 
+                    <p>nolaskinsentials (content strategy, project management)</p>
+                    <p>cardless (copywriting)</p>
+                <p><b>2022</b></p>
+                    <p>murmur [now: plumb] (content marketing)</p>
+                <p><b>2021</b></p>
+                    <p>contra (copywriting)</p>
+                    <p>damnventures (copywriting)</p>
+                    <p>pico (copywriting)</p>
+                    <p>f*gma (content writing)</p>
+                <p><b>2020</b></p>
+                    <p>lovers magazine [now: Spaces] (social management, brand, editor)</p>
+                    <p>in my universe (brand, social management)</p>
+                    <p>godling studio (pitch deck writing)</p>
+                    <p>superhi (copyediting)</p>
+
+                <h2>contact</h2>
+                <a href="https://instagram.com/janjirasun">instagram</a> <a href="https://twitter.com/janjirasun">twitter</a> <a href="https://tiktok.com/@janjirasun">tiktok</a> <a href="https://janjirasun.substack.com/">newsletter</a> <a href="mailto:janjiratsun@gmail.com">email</a>
+            </div>
+        </div>
     </div>
-    <script src="entrance.js"></script>
+    <script src="base.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.classList.add('fade-in');
+            
+            // Toggle more content
+            const moreLink = document.getElementById('more-link');
+            const moreContent = document.getElementById('more-content');
+            
+            if (moreLink && moreContent) {
+                moreLink.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    if (moreContent.style.display === 'none') {
+                        moreContent.style.display = 'block';
+                    } else {
+                        moreContent.style.display = 'none';
+                    }
+                });
+            }
+            
+            // Toggle project items
+            const projectItems = document.querySelectorAll('.project-item');
+            projectItems.forEach(function(projectItem) {
+                projectItem.addEventListener('click', function(e) {
+                    const projectContent = this.querySelector('.project-content');
+                    if (projectContent) {
+                        if (projectContent.style.display === 'none') {
+                            projectContent.style.display = 'block';
+                            this.style.height = 'auto';
+                        } else {
+                            projectContent.style.display = 'none';
+                            this.style.height = '70px';
+                        }
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>

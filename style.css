@@ -1,23 +1,28 @@
 body, html { 
-    margin: 10;
+    margin: 0;
     padding: 0;
     height: 100%;
     overflow: hidden;
+    font-family: "Arial Narrow", Arial, sans-serif;
 }
 
 .header {
-    padding-left:20px;
+    padding-left: 10px;
+    padding-top: 10px;
 }
 .container {
     display: flex;
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .column {
-    flex: 1; /* Equal width columns */
+    flex: 1;
     width: 50%;
     overflow-y: auto;
-    padding: 0px 20px 100px 20px;
+    padding: 0;
     box-sizing: border-box;
     flex-shrink: 0;
 }
@@ -40,13 +45,21 @@ body, html {
         overflow: scroll;
     }
     .header {
-        padding-left: 20px ;
+        padding-left: 0;
     }
 }
 
 img {
     max-width: 100%;
     height: auto;
+    display: block;
+}
+
+.project > img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: block;
 }
 
 header {
@@ -54,72 +67,14 @@ header {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 .header {
     margin: 0;
 }
 
-.seeking-opportunities {
-    display: flex;
-    align-items: center;
-    margin: 0;
-}
-
-.seeking-opportunities img {
-    margin-right: 10px;
-    height: 20px; /* Adjust as needed */
-}
-
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .seeking-opportunities {
-        margin-top: 10px;
-    }
-}
-
-.filter-buttons {
-    margin-bottom: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.filter-btn {
-    background-color: #f8f8f8;
-    border: none;
-    color: #555;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-size: 16px;
-    font-weight: 500;
-    font-family: 'Times New Roman';
-    border-radius: 30px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.filter-btn:hover {
-    background-color: #e0e0e0;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-}
-
-.filter-btn.active {
-    background-color: #4a4a4a;
-    color: white;
-}
-
-@media (max-width: 768px) {
-    .filter-buttons {
-        justify-content: center;
-    }
-}
 
 .projects-column {
     display: flex;
@@ -138,7 +93,9 @@ header {
 .projects-container {
     flex-grow: 1; /* Allow container to grow and fill remaining space */
     overflow-y: auto; /* Enable vertical scrolling */
-    padding-right: 15px; /* Offset for scrollbar to align content */
+    padding: 0 0 100px 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -219,17 +176,84 @@ header {
 
 .about-column {
     display: flex;
-    align-items: center; /* Vertically center the content */
-    padding: 20px; /* Add some padding */
+    flex-direction: column;
+    height: 100vh;
+    padding: 0;
 }
 
 .about-content {
-    max-height: 60vh; /* Limit the height of the about content */
-    overflow-y: auto; /* Allow scrolling if content exceeds max-height */
-    padding-right: 15px; /* Offset for scrollbar */
-    border: 2px solid black;
-    padding: 20px;
-    border-radius: 30px;
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 0 0 100px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* text padding */
+.column h1,
+.column h2,
+.column h3,
+.column h4,
+.column p,
+.column a,
+.column .collapse,
+.column .target h3,
+.column .target p,
+.column .target h4,
+.column li,
+header h1,
+header p,
+.about-content h2,
+.about-content p,
+.about-content a {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* full-width images */
+.column .target {
+    padding: 0;
+}
+
+/* all images full-width with no padding */
+.project > img,
+.target img,
+.about-content img {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: block;
+}
+
+/* Ensure first image in about-content starts at the very top */
+.about-content > img:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/* But exclude small inline images in headings (like icons/gifs) */
+h1 img,
+h2 img,
+h3 img {
+    display: inline;
+    width: auto;
+    padding: 0;
+    margin: 0;
+}
+
+/* Image galleries should also be full-width */
+.image-gallery {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -252,11 +276,113 @@ header {
 
     .about-column {
         height: auto;
-        padding: 20px 0;
+        padding: 0;
     }
 
     .about-content {
-        max-height: none;
+        flex-grow: 0;
         overflow-y: visible;
     }
+}
+
+/* More link and content styles */
+.more-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.more-content {
+    font-size: 14px;
+    opacity: 0.3;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+/* Project items */
+.project-item {
+    height: 70px;
+    margin-bottom: 0;
+    margin-top: 0;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 1px solid #00000029;
+}
+
+.project-item:not(:first-child) {
+    margin-top: -1px;
+}
+
+.project-item:hover {
+    background-color: rgba(217, 217, 217, 0.3);
+}
+
+.project-header {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.project-title {
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.project-subtext {
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    left: 250px; /* Fixed position to align all subtexts */
+    margin: 0;
+}
+
+.project-content {
+
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 100%;
+}
+
+.project-sidebyside {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border-top: 1px solid #00000029;
+    border-bottom: 1px solid #00000029;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.project-sidebyside .project-intro {
+    flex: 0 0 50%;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.project-sidebyside img {
+    flex: 0 0 50%;
+    width: 50%;
+    max-width: 50%;
+    box-sizing: border-box;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.pro-1 p {
+    padding-left: 20px;
 }
